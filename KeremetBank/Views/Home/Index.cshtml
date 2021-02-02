@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ExportToExcel">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="SocialNumber">
+                <option selected>Open this select menu</option>
+                <option value="12345678901234">12345678901234</option>
+                <option value="98765432101234">98765432101234</option>
+                <option value="12345543211234">12345543211234</option>
+                <option value="12345671234567">12345671234567</option>
+            </select>
+            <div class="form-group">
+                <input type="submit"  value="SUBMIT" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>
